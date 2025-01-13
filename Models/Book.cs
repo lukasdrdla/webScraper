@@ -10,9 +10,9 @@ namespace webScraper.Models
         public int Id { get; set; }
         public string Title { get; set; } = string.Empty;
         public string ProductLink { get; set; } = string.Empty;
-        public decimal Price { get; set; }
+        public string Price { get; set; } = string.Empty;
         public string Availability { get; set; } = string.Empty;
-        public int Rating { get; set; }
+        public string Rating { get; set; } = string.Empty;
         
     }
 }
