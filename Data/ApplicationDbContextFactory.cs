@@ -12,7 +12,7 @@ namespace webScraper.Data
         public ApplicationDbContext CreateDbContext(string[] args)
         {
             var optionsBuilder = new DbContextOptionsBuilder<ApplicationDbContext>();
-            optionsBuilder.UseMySQL("server=localhost;database=webScraper;user=root;password=123456");
+            optionsBuilder.UseMySQL("server=localhost;database=webScraper;user=root;");
 
             return new ApplicationDbContext(optionsBuilder.Options);
         }
